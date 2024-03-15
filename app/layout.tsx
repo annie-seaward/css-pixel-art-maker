@@ -5,8 +5,8 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "PixelIt | CSS Pixel Art Maker",
-  description: "PixelIt is a CSS Pixel Art Maker",
+  title: "CSSPixelify | CSS Pixel Art Maker",
+  description: "CSSPixelify is a CSS Pixel Art Maker. Draw pixel art and generate single div CSS art!",
 };
 
 export default function RootLayout({

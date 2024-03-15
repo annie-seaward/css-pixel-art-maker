@@ -13,7 +13,7 @@ const Editor = () => {
 
   return (
     <div className="flex flex-col items-center p-4">
-      <h1 className="text-3xl mb-4">PixelIt</h1>
+      <h1 className="text-3xl mb-4">CSSPixelify</h1>
       <h2 className="text-2xl mb-4">
         Draw pixel art and generate single div CSS art!
       </h2>
@@ -33,12 +33,20 @@ const Editor = () => {
             className=""
           />
           <DrawingGrid gridSize={gridSize} selectedColor={selectedColor} />
-          <button
-            onClick={() => console.log("Generate CSS Art")}
-            className="mt-4 bg-rose-500 text-white px-4 py-2 rounded-md"
-          >
-            Generate CSS Art
-          </button>
+          <div className="flex justify-center gap-8">
+            <button
+              onClick={() => console.log("Generate CSS Art")}
+              className="mt-4 bg-rose-500 text-white px-4 py-2 rounded-md"
+            >
+              Copy CSS to Clipboard
+            </button>
+            <button
+              onClick={() => console.log("Generate CSS Art")}
+              className="mt-4 bg-rose-500 text-white px-4 py-2 rounded-md"
+            >
+              Download index.html
+            </button>
+          </div>
         </div>
       ) : (
         <div>
