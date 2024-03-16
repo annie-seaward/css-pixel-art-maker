@@ -33,20 +33,6 @@ const Editor = () => {
             className=""
           />
           <DrawingGrid gridSize={gridSize} selectedColor={selectedColor} />
-          <div className="flex justify-center gap-8">
-            <button
-              onClick={() => console.log("Generate CSS Art")}
-              className="mt-4 bg-rose-500 text-white px-4 py-2 rounded-md"
-            >
-              Copy CSS to Clipboard
-            </button>
-            <button
-              onClick={() => console.log("Generate CSS Art")}
-              className="mt-4 bg-rose-500 text-white px-4 py-2 rounded-md"
-            >
-              Download index.html
-            </button>
-          </div>
         </div>
       ) : (
         <div>
